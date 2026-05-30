@@ -1,0 +1,31 @@
+# ============================================================
+# Ghostty Config - ~/.config/ghostty/config
+# ============================================================
+
+# --------------- Font ---------------
+font-family = JetBrainsMono Nerd Font
+font-size = 13
+font-thicken = true
+
+# --------------- Theme ---------------
+theme = nightlake
+
+# --------------- Window ---------------
+window-padding-x = 10
+window-padding-y = 8
+window-decoration = auto
+gtk-titlebar = false
+background-opacity = 0.95
+
+# --------------- Behavior ---------------
+copy-on-select = clipboard
+confirm-close-surface = false
+mouse-hide-while-typing = true
+shell-integration = zsh
+
+# --------------- Cursor ---------------
+cursor-style = bar
+cursor-style-blink = true
+
+# --------------- Scrollback ---------------
+scrollback-limit = 50000

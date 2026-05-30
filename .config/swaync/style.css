@@ -1,0 +1,146 @@
+* {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.notification-window {
+    background: #1a1e24;
+    padding: 4px;
+    margin: 0;
+}
+
+.notification-row {
+    outline: none;
+    background: transparent;
+    padding: 4px 8px;
+}
+
+.notification {
+    background: #1a1e24;
+    border: 2px solid #4a7a9b;
+    border-radius: 4px;
+    padding: 8px;
+    color: #c8cdd6;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+
+.notification-content {
+    padding: 4px;
+}
+
+.summary {
+    font-weight: bold;
+    color: #c8cdd6;
+}
+
+.body {
+    color: #a0aab8;
+}
+
+.time {
+    color: #6c7a8a;
+    font-size: 11px;
+}
+
+.app-name {
+    color: #7aa2c8;
+    font-size: 11px;
+}
+
+.close-button {
+    background: transparent;
+    border: 1px solid #2e3440;
+    border-radius: 2px;
+    color: #6c7a8a;
+}
+
+.close-button:hover {
+    background: #2e3440;
+    color: #c47a7a;
+}
+
+.notification-group {
+    border: 1px solid #2e3a48;
+    border-radius: 6px;
+    padding: 4px;
+    margin: 4px;
+    background: transparent;
+}
+
+.blank-window {
+    background: transparent;
+}
+
+.control-center {
+    background: #1a1e24;
+    border: 1px solid #2e3440;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+.control-center-list {
+    background: transparent;
+    padding: 4px;
+}
+
+.notification-group-headers {
+    color: #6c7a8a;
+    font-size: 11px;
+    padding: 4px 8px;
+}
+
+.widget-title {
+    color: #c8cdd6;
+    font-size: 13px;
+    padding: 8px;
+    border-bottom: 1px solid #2e3440;
+}
+
+.widget-title > button {
+    background: transparent;
+    border: 1px solid #2e3440;
+    border-radius: 2px;
+    color: #a0aab8;
+    padding: 2px 8px;
+}
+
+.widget-title > button:hover {
+    background: #2e3440;
+    color: #c8cdd6;
+}
+
+.widget-dnd {
+    padding: 8px 12px;
+    border-bottom: 1px solid #2e3440;
+    color: #c8cdd6;
+}
+
+.widget-dnd > switch {
+    border-radius: 12px;
+    border: 1px solid #2e3440;
+    background: #2e3440;
+    min-width: 40px;
+    min-height: 20px;
+    outline: none;
+    box-shadow: none;
+}
+
+.widget-dnd > switch:checked {
+    background: #7aa2c8;
+    border-color: #7aa2c8;
+}
+
+.widget-dnd > switch slider {
+    border-radius: 50%;
+    background: #c8cdd6;
+    min-width: 16px;
+    min-height: 16px;
+    margin: 2px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+}
+
+.widget-dnd > switch:checked slider {
+    background: #ffffff;
+}

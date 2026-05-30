@@ -1,0 +1,51 @@
+# ============================================================
+# Starship Config - ~/.config/starship.toml
+# ============================================================
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$rust\
+$nodejs\
+$c\
+$cmd_duration\
+$line_break\
+$character"""
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+style = "bold lavender"
+
+[git_branch]
+symbol = " "
+style = "bold mauve"
+
+[git_status]
+style = "bold maroon"
+
+[cmd_duration]
+min_time = 3_000
+format = "took [$duration](bold yellow) "
+
+[python]
+symbol = " "
+format = "via [$symbol$version]($style) "
+
+[rust]
+symbol = " "
+format = "via [$symbol$version]($style) "
+
+[nodejs]
+symbol = " "
+format = "via [$symbol$version]($style) "
+
+[c]
+symbol = " "
+format = "via [$symbol$version]($style) "
