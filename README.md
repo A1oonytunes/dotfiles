@@ -20,6 +20,19 @@ Alon's Fedora Linux dotfiles — Sway + Waybar + Ghostty setup.
 
 ## Install
 
+### Fresh machine (installs everything + symlinks configs)
+
+```bash
+git clone git@github.com:A1oonytunes/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+chmod +x bootstrap.sh
+./bootstrap.sh
+```
+
+`bootstrap.sh` enables the required COPR repos, installs all packages via `dnf`, installs Starship and Zinit via their official scripts, sets Zsh as the default shell, then calls `install.sh` to symlink the configs.
+
+### Config symlinks only (packages already installed)
+
 ```bash
 git clone git@github.com:A1oonytunes/dotfiles.git ~/dotfiles
 cd ~/dotfiles
@@ -27,7 +40,7 @@ chmod +x install.sh
 ./install.sh
 ```
 
-The script symlinks every config to the right place, backing up anything already there with a `.bak` suffix.
+Both scripts back up any existing file with a `.bak` suffix before overwriting.
 
 ## Layout
 
