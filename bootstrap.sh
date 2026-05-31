@@ -20,6 +20,12 @@ $SUDO dnf copr enable -y atim/lazygit                 # lazygit
 $SUDO dnf copr enable -y erikreider/SwayNotificationCenter  # swaync
 $SUDO dnf copr enable -y lihaohong/yazi               # yazi file manager
 
+# ── VS Code repository ────────────────────────────────────────────────────────
+info "Adding VS Code repository…"
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" \
+    | $SUDO tee /etc/yum.repos.d/vscode.repo > /dev/null
+
 # ── DNF packages ──────────────────────────────────────────────────────────────
 info "Installing packages via dnf…"
 
@@ -41,7 +47,9 @@ $SUDO dnf install -y \
     `# ── File manager (COPR: lihaohong/yazi) ──` \
     yazi \
     `# ── System utilities ──` \
-    polkit xdg-user-dirs curl git
+    polkit xdg-user-dirs curl git \
+    `# ── VS Code (Microsoft repo) ──` \
+    code
 
 # ── Starship prompt ───────────────────────────────────────────────────────────
 info "Installing Starship prompt…"
